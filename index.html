@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <title>Bonanza | Apartments | Nis</title>
 </head>
+
 <body>
     <header>
         <div class="header-gradient"></div>
@@ -21,10 +23,10 @@
             </div>
             <nav class="nav-bar">
                 <ul class="nav-menu txt-caps fnt-w-l">
-                    <li><a href="html/apartmani.html">Apartmani</a></li>
-                    <li><a href="html/restorani.html">Restorani</a></li>
-                    <li><a href="html/galerija.html">Galerija</a></li>
-                    <li><a href="html/kontakt.html">Kontakt</a></li>
+                    <li><a href="apartmani.html">Apartmani</a></li>
+                    <li><a href="restorani.html">Restorani</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </nav>
             <div class="booking">
@@ -51,7 +53,12 @@
             <div class="about">
                 <h1 class="h1-el-fnt">Bonanza</h1>
                 <h2 class="h2-el-fnt">Hotel-like apartments</h2>
-                <p class="mt fs fnt-w-l">U potrazi za jedinstvenim mjestima potrebno je ponekad skrenuti s glavnog puta. No neka vas glavni putevi dovedu do Istre, do Bala. A zatim usporite i pratite cestu koja se sa svakim kilometrom sve više sužava, dok vam se priroda sve više približava. Usporite još i više te skrenite na bijelu cestu na kraju koje se pred vama otvaraju velika željezna vrata. Stigli ste na Meneghetti. Zatim zastanite bar na trenutak – i uvjerite se da se najbolja mjesta nalaze na sporednim putevima.</p>
+                <p class="mt fs fnt-w-l">U potrazi za jedinstvenim mjestima potrebno je ponekad skrenuti s glavnog puta.
+                    No neka vas glavni putevi dovedu do Istre, do Bala. A zatim usporite i pratite cestu koja se sa
+                    svakim kilometrom sve više sužava, dok vam se priroda sve više približava. Usporite još i više te
+                    skrenite na bijelu cestu na kraju koje se pred vama otvaraju velika željezna vrata. Stigli ste na
+                    Meneghetti. Zatim zastanite bar na trenutak – i uvjerite se da se najbolja mjesta nalaze na
+                    sporednim putevima.</p>
             </div>
             <div class="mini-gallery">
                 <img src="dist/images/masonry.jpg" alt="">
@@ -70,25 +77,25 @@
                 </div>
                 <div class="image w-three n-m">
                     <img src="dist/images/gallery2.jpg" onclick="openModal();currentSlide(2)" alt="">
-                    <div class="image-overlay" onclick="openModal();currentSlide(2)" >
+                    <div class="image-overlay" onclick="openModal();currentSlide(2)">
                         <p class="hidden-fnt">pogledajte sliku u galeriji</p>
                     </div>
                 </div>
                 <div class="image w-two">
                     <img src="dist/images/gallery3.JPG" onclick="openModal();currentSlide(3)" alt="">
-                    <div class="image-overlay" onclick="openModal();currentSlide(3)" >
+                    <div class="image-overlay" onclick="openModal();currentSlide(3)">
                         <p class="hidden-fnt">pogledajte sliku u galeriji</p>
                     </div>
                 </div>
                 <div class="image w-one">
                     <img src="dist/images/gallery4.JPG" onclick="openModal();currentSlide(4)" alt="">
-                    <div class="image-overlay" onclick="openModal();currentSlide(4)" >
+                    <div class="image-overlay" onclick="openModal();currentSlide(4)">
                         <p class="hidden-fnt">pogledajte sliku u galeriji</p>
                     </div>
                 </div>
                 <div class="image w-one n-m">
                     <img src="dist/images/gallery5.JPG" onclick="openModal();currentSlide(5)" alt="">
-                    <div class="image-overlay" onclick="openModal();currentSlide(5)" >
+                    <div class="image-overlay" onclick="openModal();currentSlide(5)">
                         <p class="hidden-fnt">pogledajte sliku u galeriji</p>
                     </div>
                 </div>
@@ -97,63 +104,63 @@
             <div id="myModal" class="modal">
                 <span class="close cursor" onclick="closeModal()">&times;</span>
                 <div class="modal-content">
-              
-                  <div class="mySlides">
-                    <div class="numbertext">1 / 5</div>
-                    <img src="dist/images/gallery1.JPG" style="width:100%">
-                  </div>
-              
-                  <div class="mySlides">
-                    <div class="numbertext">2 / 5</div>
-                    <img src="dist/images/gallery2.jpg" style="width:100%">
-                  </div>
-              
-                  <div class="mySlides">
-                    <div class="numbertext">3 / 5</div>
-                    <img src="dist/images/gallery3.JPG" style="width:100%">
-                  </div>
-              
-                  <div class="mySlides">
-                    <div class="numbertext">4 / 5</div>
-                    <img src="dist/images/gallery4.JPG" style="width:100%">
-                  </div>
 
-                  <div class="mySlides">
-                    <div class="numbertext">5 / 5</div>
-                    <img src="dist/images/gallery5.JPG" style="width:100%">
-                  </div>
-              
-                  <!-- Next/previous controls -->
-                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              
-                  <div class="mini-slider">
-                    <a class="mini-prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <div class="column">
-                        <img class="demo" src="dist/images/gallery1.JPG" onclick="currentSlide(1)" alt="">
-                      </div>
-                  
-                      <div class="column">
-                        <img class="demo" src="dist/images/gallery2.jpg" onclick="currentSlide(2)" alt="">
-                      </div>
-                  
-                      <div class="column">
-                        <img class="demo" src="dist/images/gallery3.JPG" onclick="currentSlide(3)" alt="">
-                      </div>
-                  
-                      <div class="column">
-                        <img class="demo" src="dist/images/gallery4.JPG" onclick="currentSlide(4)" alt="">
-                      </div>
-    
-                      <div class="column">
-                        <img class="demo" src="dist/images/gallery5.JPG" onclick="currentSlide(5)" alt="">
-                      </div>
-                      <a class="mini-next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="dist/images/gallery1.JPG" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="dist/images/gallery2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="dist/images/gallery3.JPG" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="dist/images/gallery4.JPG" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="dist/images/gallery5.JPG" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="mini-slider">
+                        <a class="mini-prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class="column">
+                            <img class="demo" src="dist/images/gallery1.JPG" onclick="currentSlide(1)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="dist/images/gallery2.jpg" onclick="currentSlide(2)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="dist/images/gallery3.JPG" onclick="currentSlide(3)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="dist/images/gallery4.JPG" onclick="currentSlide(4)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="dist/images/gallery5.JPG" onclick="currentSlide(5)" alt="">
+                        </div>
+                        <a class="mini-next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                 </div>
             </div>
         </section>
-        
+
         <section class="section apartments">
             <h1 class="h1-el-fnt">Apartmani</h1>
             <h2 class="h2-el-fnt">UDOBNOST DIZAJNIRANA ZA BEZBRIŽAN ODMOR</h2>
@@ -161,7 +168,7 @@
             <div class="apartments-container">
                 <div class="container-wraper">
                     <div class="apartments-container-item apartment-item">
-                        <a href="html/apartmani/superior-apartment.html" class="apartment-image">
+                        <a href="superior-apartment.html" class="apartment-image">
                             <img src="dist/images/superior1.JPG" alt="">
                             <div class="apartment-content-overlay ptb plr">
                                 <p class="apartment-title">Superior</p>
@@ -173,7 +180,7 @@
                         </a>
                     </div>
                     <div class="apartments-container-item apartment-item">
-                        <a href="html/apartmani/standard-apartment.html" class="apartment-image">
+                        <a href="standard-apartment.html" class="apartment-image">
                             <img src="dist/images/standard.JPG" alt="">
                             <div class="apartment-content-overlay ptb plr">
                                 <p class="apartment-title">Standard</p>
@@ -185,7 +192,7 @@
                         </a>
                     </div>
                     <div class="apartments-container-item apartment-item">
-                        <a href="html/apartmani/studio-apartment.html" class="apartment-image">
+                        <a href="studio-apartment.html" class="apartment-image">
                             <img src="dist/images/studio.JPG" alt="">
                             <div class="apartment-content-overlay ptb plr">
                                 <p class="apartment-title">Studio</p>
@@ -196,7 +203,7 @@
                             </div>
                         </a>
                     </div>
-                </div>  
+                </div>
             </div>
         </section>
         <div class="elfsight-app-025c78fb-54a1-4afb-882a-f246f42ed6a2"></div>
@@ -230,4 +237,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
