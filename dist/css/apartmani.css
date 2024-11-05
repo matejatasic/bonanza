@@ -13,3 +13,7 @@ header a{
 .apartments{
     background-color: rgb(245, 245, 245);
 }
+
+.gallery-header {
+    background-color: #fff;
+}
