@@ -1,0 +1,48 @@
+@import "../../styles/_variables.scss";
+
+.logo-image {
+    width: 120px;
+    height: 120px;
+}
+
+.txt-caps {
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+}
+
+.fnt-w-l {
+    font-weight: 300;
+}
+
+.desktop-header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-section {
+    padding-top: 10%;
+}
+
+.best-rate {
+    font-size: 0.5rem;
+    letter-spacing: 0.188rem;
+    margin-top: 1.063rem;
+}
+
+.nav-bar {
+    display: flex;
+    height: 3.125rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop-nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.desktop-nav-menu .nav-item {
+    font-size: 1rem;
+    margin-left: 3.125rem;
+}

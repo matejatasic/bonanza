@@ -1,0 +1,57 @@
+@mixin section-padding() {
+    @media only screen and (min-width: 1800px) {
+        padding: 15.625rem 12.5rem;
+    }
+
+    @media only screen and (max-width: 1800px) {
+        padding: 12.5rem 10rem;
+    }
+    
+    @media only screen and (max-width: 1600px) {
+        padding: 10rem 7.5rem;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        padding: 7.5rem 5.625rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding: 5.625rem 2.8125rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+        padding: 2.8125rem 1.40625rem;
+    }
+}
+
+@mixin header-left-right-padding() {
+    @media only screen and (min-width: 1800px) {
+        padding-left: 12.5rem;
+        padding-right: 12.5rem;
+    }
+
+    @media only screen and (max-width: 1800px) {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    
+    @media only screen and (max-width: 1600px) {
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        padding-left: 5.625rem;
+        padding-right: 5.625rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding-left: 2.8125rem;
+        padding-right: 2.8125rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+        padding-left: 1.40625rem;
+        padding-right: 1.40625rem;
+    }
+}

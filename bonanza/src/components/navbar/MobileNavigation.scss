@@ -1,0 +1,67 @@
+.logo {
+    z-index: 15;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    z-index: 15;
+}
+
+.main-mobile-header {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-header-right {
+    display: flex;
+}
+
+.language,
+.open-close-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh + 23px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    z-index: 13;
+}
+
+.mobile-nav.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.mobile-nav-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-nav-menu .nav-item {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .mobile-nav {
+        height: calc(100vh + 150px);
+    }
+}

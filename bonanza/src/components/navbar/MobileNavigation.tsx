@@ -1,0 +1,57 @@
+import { MdOutlineMenu, MdClose } from 'react-icons/md';
+
+import "./MobileNavigation.scss"
+import { useState } from 'react';
+
+export default function MobileNavigation() {
+    const [shouldShowNav, setShouldShowNav] = useState<boolean>(false);
+    const iconClass = "hamburger-menu";
+    const iconSize = "40px";
+    const iconColor = "black";
+
+
+    const Hamburger = <MdOutlineMenu className={iconClass}
+        size={iconSize} color={iconColor} onClick={() => toggleShouldShowNav()} />
+
+    const Close = <MdClose className={iconClass}
+        size={iconSize} color={iconColor}
+        onClick={() => toggleShouldShowNav()} />
+
+    function toggleShouldShowNav() {
+        setShouldShowNav(!shouldShowNav)
+    }
+
+    return (
+        <div className="mobile-navigation">
+            <div className="main-mobile-header">
+                <div className="logo">
+                    <a href="index.html" className="logo">
+                        <img className="logo-image" src="/images/logo9.svg" alt="site-logo" />
+                    </a>
+                </div>
+                <div className="mobile-header-right">
+                    <div className="language">
+                        <a href="#">EN</a>
+                        <span className="language-separator">/</span>
+                        <a href="#" className="active-language">RS</a>
+                    </div>
+                    <div className="open-close-buttons">
+                        {shouldShowNav ? Close : Hamburger}
+                    </div>
+                </div>
+            </div>
+            <nav className={`mobile-nav ${shouldShowNav ? "active" : ""}`}>
+                <ul className="mobile-nav-menu">
+                    <li className="nav-item"><a href="apartmani.html">Apartmani</a></li>
+                    <li className="nav-item"><a href="restorani.html">Restorani</a></li>
+                    <li className="nav-item"><a href="galerija.html">Galerija</a></li>
+                    <li className="nav-item"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <div className="booking-section">
+                    <button className="btn btn-green">Rezerviši</button>
+                    <p className="best-rate txt-caps">Garancija najbolje cene</p>
+                </div>
+            </nav>
+        </div>
+    );
+}

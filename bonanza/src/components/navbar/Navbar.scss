@@ -1,0 +1,81 @@
+@import "../../styles/_variables.scss";
+@import "../../styles/mixins.scss";
+
+header {
+    color: #000;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    height: 7.875rem;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+}
+
+.desktop-navigation {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    @include header-left-right-padding;
+}
+
+.mobile-navigation {
+    display: none;
+}
+
+.nav-item {
+    letter-spacing: 0.188rem;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.15s ease-in;
+
+    &:hover {
+        color: $green-color;
+    }
+
+    a {
+        color: #000;
+    }
+}
+
+.language {
+    margin-right: 1.875rem;
+}
+
+.language a {
+    color: #000;
+}
+
+.language-separator {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.language .active-language {
+    color: $green-color;
+}
+
+.language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-section {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1300px) {
+    .desktop-navigation {
+        display: none;
+    }
+
+    .mobile-navigation {
+        height: inherit;
+        display: block;
+        @include header-left-right-padding;
+    }
+}

@@ -1,0 +1,87 @@
+.gallery {
+    background-color: var(--bggrey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7.5rem 7.5rem;
+}
+
+.gallery h2 {
+    margin-top: 0.625rem;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 3.125rem;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-container .w-three {
+    height: 31.25rem;
+    width: 60%;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+
+.gallery-container .w-two {
+    height: 31.25rem;
+    width: 37%;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+
+.gallery-container .w-one {
+    height: 31.25rem;
+    width: 28.5%;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+
+.gallery-container .n-m {
+    margin-right: 0;
+}
+
+.image {
+    position: relative;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.image .image-overlay {
+    background-color: rgb(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all .25s ease-in-out;
+}
+
+.image-overlay p {
+    color: #fff;
+    opacity: 0;
+    transition: all .75s ease-in-out;
+}
+
+.image:hover .image-overlay {
+    height: 100%;
+}
+
+.image:hover p {
+    opacity: 1;
+}
