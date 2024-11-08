@@ -51,6 +51,9 @@ export default function Gallery() {
                         alt: image.alt
                     }
                 })}
+                styles={{
+                    container: { backgroundColor: "rgba(0, 0, 0, .8)" },
+                }}
             />
         </section>
     );
