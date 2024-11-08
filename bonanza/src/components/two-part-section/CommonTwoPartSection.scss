@@ -1,4 +1,6 @@
 @import "../../styles/mixins";
+@import "../../styles/variables";
+
 
 .section {
     display: flex;
@@ -19,6 +21,23 @@
 
 .section .images img {
     width: 100%;
+}
+
+.two-part-section-h1,
+.two-part-section-h2 {
+    font-family: $sans-font;
+}
+
+.two-part-section-h1 {
+    font-size: 2.5rem;
+}
+
+.two-part-section-h2 {
+    font-size: 1.875rem;
+}
+
+.two-part-section-text {
+    font-family: $sans-serif-font;
 }
 
 @media only screen and (max-width: 1300px) {

@@ -24,8 +24,8 @@ export default function Gallery() {
 
     return (
         <section className="section gallery">
-            <h1 className="txt-caps">Priroda susrece luksuz</h1>
-            <h2 className="txt-caps">Elegancija do zadnjeg detalja</h2>
+            <h1 className="txt-caps gallery-h1">Priroda susrece luksuz</h1>
+            <h2 className="txt-caps gallery-h2">Elegancija do zadnjeg detalja</h2>
             <div className="section-line"></div>
             <div className="gallery-container">
                 {images.map((img, index) => (
@@ -36,7 +36,7 @@ export default function Gallery() {
                     >
                         <img src={`/images/${img.image}`} alt={img.alt} />
                         <div className="image-overlay">
-                            <p className="hidden-fnt">pogledajte sliku u galeriji</p>
+                            <p className="hidden-text">pogledajte sliku u galeriji</p>
                         </div>
                     </div>
                 ))}

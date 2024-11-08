@@ -12,6 +12,10 @@ header {
     position: fixed;
 }
 
+header * {
+    font-family: $sans-serif-font;
+}
+
 .desktop-navigation {
     height: inherit;
     display: flex;

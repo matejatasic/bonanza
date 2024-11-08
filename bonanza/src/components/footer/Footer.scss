@@ -13,6 +13,10 @@ footer {
     color: white;
 }
 
+footer * {
+    font-family: $sans-serif-font;
+}
+
 footer a {
     color: white;
 }
@@ -101,30 +105,36 @@ footer a {
 
 .email-form form input::placeholder {
     color: white;
+    font-family: $sans-serif-font;
 }
 
 input::placeholder {
     color: white;
+    font-family: $sans-serif-font;
 }
 
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: white;
+    font-family: $sans-serif-font;
 }
 
 ::-moz-placeholder {
     /* Firefox 19+ */
     color: white;
+    font-family: $sans-serif-font;
 }
 
 :-moz-placeholder {
     /* Firefox 18- */
     color: white;
+    font-family: $sans-serif-font;
 }
 
 :-ms-input-placeholder {
     /* Edge/IE 10+ */
     color: white;
+    font-family: $sans-serif-font;
 }
 
 .footer-down {

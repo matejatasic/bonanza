@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .gallery {
     background-color: var(--bggrey);
     display: flex;
@@ -7,7 +9,12 @@
     padding: 7.5rem 7.5rem;
 }
 
-.gallery h2 {
+.gallery-h1,
+.gallery-h2 {
+    font-family: $sans-font;
+}
+
+.gallery-h2 {
     margin-top: 0.625rem;
 }
 
@@ -88,5 +95,9 @@
 
 .image:hover {
     cursor: pointer;
+}
+
+.hidden-text {
+    font-family: $sans-serif-font;
 }
 
