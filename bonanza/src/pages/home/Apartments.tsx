@@ -6,7 +6,6 @@ import "./Apartments.scss"
 export default function Apartments() {
     const responsive = {
         superLargeDesktop: {
-            // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
             items: 1
         },
@@ -23,22 +22,23 @@ export default function Apartments() {
             items: 1
         }
     };
+    
     const images = [
         {
             name: "superior",
             image: "superior1.JPG",
             description: "Superior apartment"
-    },
+        },
         {
             name: "standard",
             image: "standard.JPG",
             description: "Standard apartment"
-    },
+        },
         {
             name: "studio",
             image: "studio.JPG",
             description: "Studio apartment"
-    }
+        }
     ]
 
     return (
