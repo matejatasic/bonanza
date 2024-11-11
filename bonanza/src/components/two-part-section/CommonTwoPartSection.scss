@@ -2,7 +2,7 @@
 @import "../../styles/variables";
 
 
-.section {
+.two-part-section-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,48 +10,62 @@
     @include section-padding;
 }
 
-.section .content {
-    padding-right: 5rem;
+.two-part-section-div .content {
     width: 50%;
 }
 
-.section .images {
+.two-part-section-div .image {
     width: 50%;
 }
 
-.section .images img {
+.two-part-section-div .image img {
     width: 100%;
 }
 
-.two-part-section-h1,
-.two-part-section-h2 {
+.two-part-section-div-h1,
+.two-part-section-div-h2 {
     font-family: $sans-font;
 }
 
-.two-part-section-h1 {
+.two-part-section-div-h1 {
     font-size: 2.5rem;
 }
 
-.two-part-section-h2 {
+.two-part-section-div-h2 {
     font-size: 1.875rem;
 }
 
-.two-part-section-text {
+.two-part-section-div-text {
     font-family: $sans-serif-font;
 }
 
+.two-part-section-div .padding {
+    padding-right: 5rem;
+    padding-top: 0;
+}
+
+.background-dark {
+    background-color: $dark-color;
+    color: white;
+}
+
 @media only screen and (max-width: 1300px) {
-    .section {
+    .two-part-section-div {
         flex-direction: column;
     }
 
-    .section .content {
+    .two-part-section-div .content {
         padding-right: 0;
         width: 100%;
         margin-bottom: 1.875rem;
     }
 
-    .section .images {
+    .two-part-section-div .image {
         width: 100%;
+    }
+
+    .two-part-section-div .padding {
+        padding-right: 0;
+        padding-bottom: 5rem;
     }
 }

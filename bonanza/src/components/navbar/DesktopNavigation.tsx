@@ -1,16 +1,17 @@
+import { Link } from "react-router-dom";
 import "./DesktopNavigation.scss"
 
 export default function DesktopNavigation() {
     return (
         <div className="desktop-navigation">
             <div className="logo">
-                <a href="index.html" className="logo">
+                <Link to="" className="logo">
                     <img className="logo-image" src="/images/logo9.svg" alt="site-logo" />
-                </a>
+                </Link>
             </div>
             <nav className="nav-bar">
                 <ul className="desktop-nav-menu txt-caps fnt-w-l">
-                    <li className="nav-item"><a href="apartmani.html">Apartmani</a></li>
+                    <li className="nav-item"><Link to="/apartmani">Apartmani</Link></li>
                     <li className="nav-item"><a href="restorani.html">Restorani</a></li>
                     <li className="nav-item"><a href="galerija.html">Galerija</a></li>
                     <li className="nav-item"><a href="kontakt.html">Kontakt</a></li>
