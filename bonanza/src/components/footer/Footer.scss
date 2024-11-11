@@ -34,9 +34,17 @@ footer a {
     margin-bottom: $section-margin-bottom;
 }
 
+.footer-top-subsection {
+    margin-top: $margin-top;
+}
+
 .footer-top-subsection p,
 .footer-top-subsection a {
     text-align: center;
+}
+
+.footer-section-subheading {
+    margin-top: $margin-top;
 }
 
 .social-networks a {
@@ -77,6 +85,10 @@ footer a {
     text-align: center;
     flex-basis: 33%;
     margin-bottom: $section-margin-bottom;
+}
+
+.join-us-section .text {
+    margin-top: $margin-top;
 }
 
 .email-form {
@@ -137,6 +149,11 @@ input::placeholder {
     font-family: $sans-serif-font;
 }
 
+.email-input,
+.join-us-button {
+    margin-top: $margin-top;
+}
+
 .footer-down {
     display: flex;
     justify-content: center;
@@ -151,7 +168,6 @@ input::placeholder {
 }
 
 @media only screen and (max-width: 500px) {
-
     .footer-section-heading,
     .footer-section-subheading {
         text-align: center;

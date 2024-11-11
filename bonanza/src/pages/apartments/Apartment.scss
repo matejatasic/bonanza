@@ -1,3 +1,9 @@
+@import "../../styles/variables";
+
+.single-apartment .additional-information {
+    margin-top: $margin-top;
+}
+
 .single-apartment .additional-information p {
     font-weight: bold;
 }
