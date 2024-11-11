@@ -1,7 +1,8 @@
 @import '../../styles/variables';
 
 .gallery {
-    background-color: var(--bggrey);
+    background-color: $dark-color;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
