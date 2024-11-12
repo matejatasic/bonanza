@@ -43,10 +43,10 @@ export default function MobileNavigation() {
             </div>
             <nav className={`mobile-nav ${shouldShowNav ? "active" : ""}`}>
                 <ul className="mobile-nav-menu">
-                    <li className="nav-item"><Link to="/apartmani">Apartmani</Link></li>
-                    <li className="nav-item"><Link to="/restorani">Restorani</Link></li>
-                    <li className="nav-item"><Link to="/galerija">Galerija</Link></li>
-                    <li className="nav-item"><Link to="/kontakt">Kontakt</Link></li>
+                    <li className="nav-item"><Link to="/apartmani" onClick={() => setShouldShowNav(false)}>Apartmani</Link></li>
+                    <li className="nav-item"><Link to="/restorani" onClick={() => setShouldShowNav(false)}>Restorani</Link></li>
+                    <li className="nav-item"><Link to="/galerija" onClick={() => setShouldShowNav(false)}>Galerija</Link></li>
+                    <li className="nav-item"><Link to="/kontakt" onClick={() => setShouldShowNav(false)}>Kontakt</Link></li>
                 </ul>
                 <div className="booking-section">
                     <button className="btn btn-green">Rezerviši</button>
