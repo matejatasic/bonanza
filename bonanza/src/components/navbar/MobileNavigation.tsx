@@ -26,7 +26,7 @@ export default function MobileNavigation() {
         <div className="mobile-navigation">
             <div className="main-mobile-header">
                 <div className="logo">
-                    <Link to="" className="logo">
+                    <Link to="" className="logo" onClick={() => setShouldShowNav(false)}>
                         <img className="logo-image" src="/images/logo9.svg" alt="site-logo" />
                     </Link>
                 </div>
