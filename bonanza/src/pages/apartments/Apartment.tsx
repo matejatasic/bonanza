@@ -8,7 +8,7 @@ export default function Apartment(props: any) {
         <article className="single-apartment">
             <CommonTwoPartSection
                 content={<>
-                    <h1 className="two-part-section-h1">Studio</h1>
+                    <h1 className="two-part-section-div-h1">Studio</h1>
                     <p className="fs fnt-w-l two-part-section-div-text">U potrazi za jedinstvenim mjestima potrebno je ponekad skrenuti s glavnog puta.
                         No neka vas glavni putevi dovedu do Istre, do Bala. A zatim usporite i pratite cestu koja se sa
                         svakim kilometrom sve više sužava, dok vam se priroda sve više približava. Usporite još i više te

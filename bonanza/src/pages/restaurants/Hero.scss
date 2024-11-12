@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    margin-top: 1.875rem;
+    font-family: $sans-serif-font;
+    letter-spacing: 0.313rem;
+}

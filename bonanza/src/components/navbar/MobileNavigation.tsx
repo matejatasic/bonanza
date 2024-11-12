@@ -44,7 +44,7 @@ export default function MobileNavigation() {
             <nav className={`mobile-nav ${shouldShowNav ? "active" : ""}`}>
                 <ul className="mobile-nav-menu">
                     <li className="nav-item"><Link to="/apartmani">Apartmani</Link></li>
-                    <li className="nav-item"><a href="restorani.html">Restorani</a></li>
+                    <li className="nav-item"><Link to="/restorani">Restorani</Link></li>
                     <li className="nav-item"><a href="galerija.html">Galerija</a></li>
                     <li className="nav-item"><a href="kontakt.html">Kontakt</a></li>
                 </ul>

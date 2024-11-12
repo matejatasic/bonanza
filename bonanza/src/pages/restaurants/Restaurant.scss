@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+.single-restaurant {
+    .two-part-section-div-h2 {
+        font-weight: 400;
+        margin-top: $margin-top;
+    }
+
+    .two-part-section-div-text {
+        margin-top: 10px;
+    }
+
+    .email {
+        margin-top: 0;
+    }
+
+    img {
+        cursor: initial;
+    }
+}

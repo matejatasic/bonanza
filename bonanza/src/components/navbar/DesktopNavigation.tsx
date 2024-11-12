@@ -12,7 +12,7 @@ export default function DesktopNavigation() {
             <nav className="nav-bar">
                 <ul className="desktop-nav-menu txt-caps fnt-w-l">
                     <li className="nav-item"><Link to="/apartmani">Apartmani</Link></li>
-                    <li className="nav-item"><a href="restorani.html">Restorani</a></li>
+                    <li className="nav-item"><Link to="/restorani">Restorani</Link></li>
                     <li className="nav-item"><a href="galerija.html">Galerija</a></li>
                     <li className="nav-item"><a href="kontakt.html">Kontakt</a></li>
                 </ul>
