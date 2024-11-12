@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer';
 import Apartments from './pages/apartments/Apartments';
 import Restaurants from './pages/restaurants/Restaurants';
 import Gallery from './pages/gallery/Gallery';
+import Contact from './pages/contact/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/apartmani" element={<Apartments />} />
         <Route path="/restorani" element={<Restaurants />} />
         <Route path="/galerija" element={<Gallery />} />
+        <Route path="/kontakt" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>    

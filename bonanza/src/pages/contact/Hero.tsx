@@ -6,7 +6,7 @@ export default function Hero() {
             imageUrl="/images/restaurant-hero.jpg"
         >
             <div className="hero-content">
-                <h1>Bonanza preporuka restorana!</h1>
+                <h1>Veselimo se vašem javljanju!</h1>
             </div>
         </CommonHero>
     );

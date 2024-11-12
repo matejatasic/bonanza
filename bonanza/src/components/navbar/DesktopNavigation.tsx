@@ -14,7 +14,7 @@ export default function DesktopNavigation() {
                     <li className="nav-item"><Link to="/apartmani">Apartmani</Link></li>
                     <li className="nav-item"><Link to="/restorani">Restorani</Link></li>
                     <li className="nav-item"><Link to="/galerija">Galerija</Link></li>
-                    <li className="nav-item"><a href="kontakt.html">Kontakt</a></li>
+                    <li className="nav-item"><Link to="/kontakt">Kontakt</Link></li>
                 </ul>
             </nav>
             <div className="desktop-header-right">

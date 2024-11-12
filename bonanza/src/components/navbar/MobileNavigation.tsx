@@ -46,7 +46,7 @@ export default function MobileNavigation() {
                     <li className="nav-item"><Link to="/apartmani">Apartmani</Link></li>
                     <li className="nav-item"><Link to="/restorani">Restorani</Link></li>
                     <li className="nav-item"><Link to="/galerija">Galerija</Link></li>
-                    <li className="nav-item"><a href="kontakt.html">Kontakt</a></li>
+                    <li className="nav-item"><Link to="/kontakt">Kontakt</Link></li>
                 </ul>
                 <div className="booking-section">
                     <button className="btn btn-green">Rezerviši</button>
