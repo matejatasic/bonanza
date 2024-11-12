@@ -1,0 +1,10 @@
+@import "../../styles/mixins";
+
+.apartments {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+	@include section-padding;
+}
