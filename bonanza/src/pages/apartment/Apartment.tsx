@@ -1,14 +1,10 @@
 import { useParams } from "react-router-dom";
+
 import SuperiorHero from "./SuperiorHero";
 import StandardHero from "./StandardHero";
 import StudioHero from "./StudioHero";
 import TwoPartSection from "./TwoPartSection";
-
-enum ApartmentsEnum {
-    Superior = "superior",
-    Standard = "standard",
-    Studio = "studio"
-}
+import ApartmentsEnum from "../../enums/ApartmentsEnum";
 
 export default function Apartment() {
     const { name } = useParams();

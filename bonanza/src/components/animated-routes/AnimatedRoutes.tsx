@@ -7,6 +7,7 @@ import Restaurants from '../../pages/restaurants/Restaurants';
 import Gallery from '../../pages/gallery/Gallery';
 import Contact from '../../pages/contact/Contact';
 import Apartment from '../../pages/apartment/Apartment';
+import ApartmentGallery from '../../pages/apartment-gallery/ApartmentGallery';
 
 const pageTransition = {
     initial: { opacity: 0, y: 50 },
@@ -27,7 +28,7 @@ export default function AnimatedRoutes() {
                         exit="exit"
                         variants={pageTransition}
                         transition={{ duration: 0.5 }}
-                        className="home component"
+                        className="home-component"
                     >
                         <Home />
                     </motion.div>
@@ -39,7 +40,7 @@ export default function AnimatedRoutes() {
                         exit="exit"
                         variants={pageTransition}
                         transition={{ duration: 0.5 }}
-                        className="apartments component"
+                        className="apartments-component"
                     >
                         <Apartments />
                     </motion.div>
@@ -51,7 +52,7 @@ export default function AnimatedRoutes() {
                         exit="exit"
                         variants={pageTransition}
                         transition={{ duration: 0.5 }}
-                        className="apartment component"
+                        className="apartment-component"
                     >
                         <Apartment />
                     </motion.div>
@@ -63,7 +64,7 @@ export default function AnimatedRoutes() {
                         exit="exit"
                         variants={pageTransition}
                         transition={{ duration: 0.5 }}
-                        className="restaurants component"
+                        className="restaurants-component"
                     >
                         <Restaurants />
                     </motion.div>
@@ -75,9 +76,21 @@ export default function AnimatedRoutes() {
                         exit="exit"
                         variants={pageTransition}
                         transition={{ duration: 0.5 }}
-                        className="gallery component"
+                        className="gallery-component"
                     >
                         <Gallery />
+                    </motion.div>
+                } />
+                <Route path="/galerija/:name" element={
+                    <motion.div
+                        initial="initial"
+                        animate="animate"
+                        exit="exit"
+                        variants={pageTransition}
+                        transition={{ duration: 0.5 }}
+                        className="apartment-gallery-component"
+                    >
+                        <ApartmentGallery />
                     </motion.div>
                 } />
                 <Route path="/kontakt" element={
@@ -87,7 +100,7 @@ export default function AnimatedRoutes() {
                         exit="exit"
                         variants={pageTransition}
                         transition={{ duration: 0.5 }}
-                        className="contact component"
+                        className="contact-component"
                     >
                         <Contact />
                     </motion.div>

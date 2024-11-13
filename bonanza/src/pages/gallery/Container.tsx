@@ -6,7 +6,7 @@ export default function Container() {
     return (
         <div className="container-wrapper">
             <div className="container-item">
-                <Link to="" className="image-link">
+                <Link to="/galerija/superior" className="image-link">
                     <img src="/images/superior1.JPG" alt="superior-apartment-image" />
                     <div className="content-overlay">
                         <p className="title">Superior</p>
@@ -18,7 +18,7 @@ export default function Container() {
                 </Link>
             </div>
             <div className="container-item">
-                <Link to="" className="image-link">
+                <Link to="/galerija/standard" className="image-link">
                     <img src="/images/standard.JPG" alt="standard-apartment-image" />
                     <div className="content-overlay">
                         <p className="title">Standard</p>
@@ -30,7 +30,7 @@ export default function Container() {
                 </Link>
             </div>
             <div className="container-item">
-                <Link to="" className="image-link">
+                <Link to="/galerija/studio" className="image-link">
                     <img src="/images/studio.JPG" alt="studio-apartment-image" />
                     <div className="content-overlay">
                         <p className="title">Studio</p>
