@@ -7,6 +7,7 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/effect-fade';
 
 import "./Apartments.scss"
+import { Link } from 'react-router-dom';
 
 export default function Apartments() {
     const images = [
@@ -44,7 +45,7 @@ export default function Apartments() {
                             <div className="slider">
                                 <div className="overlay"></div>
                                 <img src={`images/${image.image}`} alt={`${image.name}-apartment-image`} />
-                                <div className="image-caption">{image.description}</div>
+                                <Link to={`/apartmani/${image.name}`} className="image-caption">{image.description}</Link>
                             </div>
                         </SwiperSlide>
                     );
