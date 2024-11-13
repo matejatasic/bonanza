@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 import './App.scss';
 import Navbar from './components/navbar/Navbar';
@@ -8,12 +8,12 @@ import AnimatedRoutes from './components/animated-routes/AnimatedRoutes';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Navbar />
       <AnimatedRoutes />
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
