@@ -1,7 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
 import "./DesktopNavigation.scss"
 
 export default function DesktopNavigation() {
+    const location = useLocation();
+
+    function handleLinkClick() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
     return (
         <div className="desktop-navigation">
             <div className="logo">
@@ -11,10 +18,42 @@ export default function DesktopNavigation() {
             </div>
             <nav className="nav-bar">
                 <ul className="desktop-nav-menu txt-caps fnt-w-l">
-                    <li className="nav-item"><Link to="/apartmani">Apartmani</Link></li>
-                    <li className="nav-item"><Link to="/restorani">Restorani</Link></li>
-                    <li className="nav-item"><Link to="/galerija">Galerija</Link></li>
-                    <li className="nav-item"><Link to="/kontakt">Kontakt</Link></li>
+                    <li className="nav-item">
+                        <Link
+                            to="/apartmani"
+                            onClick={handleLinkClick}
+                            className={location.pathname === "/apartmani" ? "active-link" : ""}
+                        >
+                            Apartmani
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link
+                            to="/restorani"
+                            onClick={handleLinkClick}
+                            className={location.pathname === "/restorani" ? "active-link" : ""}
+                        >
+                            Restorani
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link
+                            to="/galerija"
+                            onClick={handleLinkClick}
+                            className={location.pathname === "/galerija" ? "active-link" : ""}
+                        >
+                            Galerija
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link
+                            to="/kontakt"
+                            onClick={handleLinkClick}
+                            className={location.pathname === "/kontakt" ? "active-link" : ""}
+                        >
+                            Kontakt
+                        </Link>
+                    </li>
                 </ul>
             </nav>
             <div className="desktop-header-right">

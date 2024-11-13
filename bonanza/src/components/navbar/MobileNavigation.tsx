@@ -1,11 +1,14 @@
+import { useState } from 'react';
+
+import { Link, useLocation } from 'react-router-dom';
 import { MdOutlineMenu, MdClose } from 'react-icons/md';
 
 import "./MobileNavigation.scss"
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 export default function MobileNavigation() {
     const [shouldShowNav, setShouldShowNav] = useState<boolean>(false);
+    const location = useLocation();
+
     const iconClass = "hamburger-menu";
     const iconSize = "40px";
     const iconColor = "black";
@@ -22,11 +25,20 @@ export default function MobileNavigation() {
         setShouldShowNav(!shouldShowNav)
     }
 
+    function handleLinkClick() {
+        setShouldShowNav(false);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
     return (
         <div className="mobile-navigation">
             <div className="main-mobile-header">
                 <div className="logo">
-                    <Link to="" className="logo" onClick={() => setShouldShowNav(false)}>
+                    <Link 
+                        to=""
+                        onClick={handleLinkClick}
+                        className="logo"
+                    >
                         <img className="logo-image" src="/images/logo9.svg" alt="site-logo" />
                     </Link>
                 </div>
@@ -43,10 +55,42 @@ export default function MobileNavigation() {
             </div>
             <nav className={`mobile-nav ${shouldShowNav ? "active" : ""}`}>
                 <ul className="mobile-nav-menu">
-                    <li className="nav-item"><Link to="/apartmani" onClick={() => setShouldShowNav(false)}>Apartmani</Link></li>
-                    <li className="nav-item"><Link to="/restorani" onClick={() => setShouldShowNav(false)}>Restorani</Link></li>
-                    <li className="nav-item"><Link to="/galerija" onClick={() => setShouldShowNav(false)}>Galerija</Link></li>
-                    <li className="nav-item"><Link to="/kontakt" onClick={() => setShouldShowNav(false)}>Kontakt</Link></li>
+                    <li className="nav-item">
+                        <Link
+                            to="/apartmani"
+                            onClick={handleLinkClick}
+                            className={location.pathname === "/apartmani" ? "active-link" : ""}
+                        >
+                            Apartmani
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link
+                            to="/restorani"
+                            onClick={handleLinkClick}
+                            className={location.pathname === "/restorani" ? "active-link" : ""}
+                        >
+                            Restorani
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link
+                            to="/galerija"
+                            onClick={handleLinkClick}
+                            className={location.pathname === "/galerija" ? "active-link" : ""}
+                        >
+                            Galerija
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link
+                            to="/kontakt"
+                            onClick={handleLinkClick}
+                            className={location.pathname === "/kontakt" ? "active-link" : ""}
+                        >
+                            Kontakt
+                        </Link>
+                    </li>
                 </ul>
                 <div className="booking-section">
                     <button className="btn btn-green">Rezerviši</button>
