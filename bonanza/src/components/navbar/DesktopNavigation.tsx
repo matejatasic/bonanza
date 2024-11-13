@@ -5,10 +5,6 @@ import "./DesktopNavigation.scss"
 export default function DesktopNavigation() {
     const location = useLocation();
 
-    function handleLinkClick() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
     return (
         <div className="desktop-navigation">
             <div className="logo">
@@ -21,7 +17,6 @@ export default function DesktopNavigation() {
                     <li className="nav-item">
                         <Link
                             to="/apartmani"
-                            onClick={handleLinkClick}
                             className={location.pathname === "/apartmani" ? "active-link" : ""}
                         >
                             Apartmani
@@ -30,7 +25,6 @@ export default function DesktopNavigation() {
                     <li className="nav-item">
                         <Link
                             to="/restorani"
-                            onClick={handleLinkClick}
                             className={location.pathname === "/restorani" ? "active-link" : ""}
                         >
                             Restorani
@@ -39,7 +33,6 @@ export default function DesktopNavigation() {
                     <li className="nav-item">
                         <Link
                             to="/galerija"
-                            onClick={handleLinkClick}
                             className={location.pathname === "/galerija" ? "active-link" : ""}
                         >
                             Galerija
@@ -48,7 +41,6 @@ export default function DesktopNavigation() {
                     <li className="nav-item">
                         <Link
                             to="/kontakt"
-                            onClick={handleLinkClick}
                             className={location.pathname === "/kontakt" ? "active-link" : ""}
                         >
                             Kontakt

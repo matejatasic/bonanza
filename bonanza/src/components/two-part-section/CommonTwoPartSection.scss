@@ -48,6 +48,11 @@
 .background-dark {
     background-color: $dark-color;
     color: white;
+
+    .two-part-section-div-h1,
+    .two-part-section-div-h2 {
+        color: white !important;
+    }
 }
 
 @media only screen and (max-width: 1300px) {

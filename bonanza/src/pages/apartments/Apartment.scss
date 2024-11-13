@@ -1,9 +1,15 @@
 @import "../../styles/variables";
 
-.single-apartment .additional-information {
-    margin-top: $margin-top;
-}
+.single-apartment {
+    .two-part-section-div-h1 {
+        color: black;
+    }
 
-.single-apartment .additional-information p {
-    font-weight: bold;
+    .additional-information {
+        margin-top: $margin-top;
+    
+        p {
+            font-weight: bold;
+        }
+    }
 }

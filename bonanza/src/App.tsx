@@ -8,14 +8,18 @@ import Apartments from './pages/apartments/Apartments';
 import Restaurants from './pages/restaurants/Restaurants';
 import Gallery from './pages/gallery/Gallery';
 import Contact from './pages/contact/Contact';
+import Apartment from './pages/apartment/Apartment';
+import ScrollToTop from './components/scroll-to-top/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
-        <Route path="" element={<Home />} /> 
+        <Route path="" element={<Home />} />
         <Route path="/apartmani" element={<Apartments />} />
+        <Route path="/apartmani/:name" element={<Apartment />} />
         <Route path="/restorani" element={<Restaurants />} />
         <Route path="/galerija" element={<Gallery />} />
         <Route path="/kontakt" element={<Contact />} />

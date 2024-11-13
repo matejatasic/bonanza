@@ -27,7 +27,6 @@ export default function MobileNavigation() {
 
     function handleLinkClick() {
         setShouldShowNav(false);
-        window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     return (

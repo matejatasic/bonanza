@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.two-part-section-apartment-description {
+    margin-top: 1.875rem;
+    margin-left: 1.875rem;
+
+    ul li {
+        font-family: $sans-serif-font;
+        margin: 1rem 0;
+        font-weight: 300;
+    }
+}
