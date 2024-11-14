@@ -37,7 +37,6 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://matejatasic.github.io/bonanza/bonanza",
   "browserslist": {
     "production": [
       ">0.2%",
