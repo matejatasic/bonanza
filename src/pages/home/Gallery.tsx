@@ -34,7 +34,7 @@ export default function Gallery() {
                         className={`image ${img.divClass}`}
                         onClick={() => handleImageDivClick(index)}
                     >
-                        <img src={`/images/${img.image}`} alt={img.alt} />
+                        <img src={`images/${img.image}`} alt={img.alt} />
                         <div className="image-overlay">
                             <p className="hidden-text">pogledajte sliku u galeriji</p>
                         </div>

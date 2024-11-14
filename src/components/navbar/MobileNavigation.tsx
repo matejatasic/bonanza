@@ -38,7 +38,7 @@ export default function MobileNavigation() {
                         onClick={handleLinkClick}
                         className="logo"
                     >
-                        <img className="logo-image" src="/images/logo9.svg" alt="site-logo" />
+                        <img className="logo-image" src="images/logo9.svg" alt="site-logo" />
                     </Link>
                 </div>
                 <div className="mobile-header-right">

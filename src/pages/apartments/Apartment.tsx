@@ -25,7 +25,7 @@ export default function Apartment(props: any) {
                 </>}
                 image={
                     <Link to="/apartmani/studio">
-                        <img src="/images/gallery1.JPG" alt="two-part-image" />
+                        <img src="images/gallery1.JPG" alt="two-part-image" />
                     </Link>
                 }
                 shouldReverse={shouldReverse}

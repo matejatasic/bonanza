@@ -9,7 +9,7 @@ export default function DesktopNavigation() {
         <div className="desktop-navigation">
             <div className="logo">
                 <Link to="" className="logo">
-                    <img className="logo-image" src="/images/logo9.svg" alt="site-logo" />
+                    <img className="logo-image" src="images/logo9.svg" alt="site-logo" />
                 </Link>
             </div>
             <nav className="nav-bar">
