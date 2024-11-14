@@ -44,7 +44,7 @@ export default function Apartments() {
                         <SwiperSlide key={image.name}>
                             <div className="slider">
                                 <div className="overlay"></div>
-                                <img src={`images/${image.image}`} alt={`${image.name}-apartment-image`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/${image.image}`} alt={`${image.name}-apartment-image`} />
                                 <Link to={`/apartmani/${image.name}`} className="image-caption">{image.description}</Link>
                             </div>
                         </SwiperSlide>

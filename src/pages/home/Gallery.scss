@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+@import "../../styles/mixins";
 
 .gallery {
     background-color: $dark-color;
@@ -7,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 7.5rem 7.5rem;
+    @include section-padding;
 }
 
 .gallery-h1,

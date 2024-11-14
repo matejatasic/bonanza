@@ -87,7 +87,7 @@ export default function ApartmentGallery() {
                                 key={index}
                                 onClick={() => handleImageDivClick(index)}
                             >
-                                <img src={`images/${image.image}`} alt={image.alt} />
+                                <img src={`${process.env.PUBLIC_URL}/images/${image.image}`} alt={image.alt} />
                                 <div className="image-overlay">
                                     <p>pogledajte sliku u galeriji</p>
                                 </div>
@@ -101,7 +101,7 @@ export default function ApartmentGallery() {
                     index={imageIndex}
                     slides={galleryImages.map(image => {
                         return {
-                            src: `images/${image.image}`,
+                            src: `${process.env.PUBLIC_URL}/images/${image.image}`,
                             alt: image.alt
                         }
                     })}

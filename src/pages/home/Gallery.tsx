@@ -34,7 +34,7 @@ export default function Gallery() {
                         className={`image ${img.divClass}`}
                         onClick={() => handleImageDivClick(index)}
                     >
-                        <img src={`images/${img.image}`} alt={img.alt} />
+                        <img src={`${process.env.PUBLIC_URL}/images/${img.image}`} alt={img.alt} />
                         <div className="image-overlay">
                             <p className="hidden-text">pogledajte sliku u galeriji</p>
                         </div>
@@ -47,7 +47,7 @@ export default function Gallery() {
                 index={imageIndex}
                 slides={images.map(image => {
                     return {
-                        src: `images/${image.image}`,
+                        src: `${process.env.PUBLIC_URL}/images/${image.image}`,
                         alt: image.alt
                     }
                 })}
