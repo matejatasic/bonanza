@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bonanza/static/css/main.e1f9bb64.css",
-    "main.js": "/bonanza/static/js/main.22380ec1.js",
+    "main.css": "/bonanza/static/css/main.18f18935.css",
+    "main.js": "/bonanza/static/js/main.6ba9de7d.js",
     "static/js/453.aa8a1c96.chunk.js": "/bonanza/static/js/453.aa8a1c96.chunk.js",
     "index.html": "/bonanza/index.html",
-    "main.e1f9bb64.css.map": "/bonanza/static/css/main.e1f9bb64.css.map",
-    "main.22380ec1.js.map": "/bonanza/static/js/main.22380ec1.js.map",
+    "main.18f18935.css.map": "/bonanza/static/css/main.18f18935.css.map",
+    "main.6ba9de7d.js.map": "/bonanza/static/js/main.6ba9de7d.js.map",
     "453.aa8a1c96.chunk.js.map": "/bonanza/static/js/453.aa8a1c96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1f9bb64.css",
-    "static/js/main.22380ec1.js"
+    "static/css/main.18f18935.css",
+    "static/js/main.6ba9de7d.js"
   ]
 }
