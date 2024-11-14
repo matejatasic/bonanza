@@ -23,7 +23,7 @@ export default function TwoPartSection(props: any) {
                 </div>
             </>}
             image={
-                <img src="images/apartment-img1.jpg" alt="two-part-image" />
+                <img src={`${process.env.PUBLIC_URL}/images/apartment-img1.jpg`} alt="two-part-image" />
             }
             shouldReverse={shouldReverse}
             shouldBackgroundBeDark={shouldBackgroundBeDark}

@@ -15,7 +15,7 @@ export default function TwoPartSection() {
                         sporednim putevima.</p>
                 </>}
                 image={<>
-                    <img src="images/gallery-image.jpg" alt="two-part-image" />
+                    <img src={`${process.env.PUBLIC_URL}/images/gallery-image.jpg`} alt="two-part-image" />
                 </>}
             />
         </section>

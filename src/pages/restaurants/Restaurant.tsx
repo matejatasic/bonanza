@@ -35,7 +35,7 @@ export default function Restaurant(props: any) {
                     </div>
                 </>}
                 image={
-                    <img src="images/restaurant_new.png" alt="two-part-image" />
+                    <img src={`${process.env.PUBLIC_URL}/images/restaurant_new.png`} alt="two-part-image" />
                 }
                 shouldReverse={shouldReverse}
                 shouldBackgroundBeDark={shouldBackgroundBeDark}
