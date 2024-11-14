@@ -23,6 +23,7 @@
     "web-vitals": "^2.1.4",
     "yet-another-react-lightbox": "^3.21.6"
   },
+  "homepage": "https://matejatasic.github.io/bonanza",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
